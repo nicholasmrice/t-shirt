@@ -41,6 +41,8 @@ button:hover {
   background: gold;
   cursor: pointer;
 }
+summary {
+  color: pink;
 }
 .container {
   display: flex;
