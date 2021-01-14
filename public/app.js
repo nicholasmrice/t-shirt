@@ -73,6 +73,8 @@ render=()=>{
   return (
 <div className='main'>
   <h1>T-Shirt Swap</h1>
+  <h3><i>A place to swap t-shirts for our aging punk rock community that continues to gain weight.</i></h3>
+  <br />
   <h2>Create New Post:</h2>
 <form onSubmit={this.submit}>
   <label htmlFor='band'>Band:</label>
