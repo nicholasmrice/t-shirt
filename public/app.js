@@ -65,7 +65,7 @@ showStats=(event)=>{
           showStats:true,
           shirts: response.data
         })
-    }
+      }
   })
 }
 
