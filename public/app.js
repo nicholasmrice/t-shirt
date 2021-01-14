@@ -79,10 +79,11 @@ render=()=>{
   <h2>Create New Post:</h2>
 <form onSubmit={this.submit}>
   <label htmlFor='band'>Band:</label>
-<input type='text' id='band' value={this.state.band} onChange={this.change} />
+<input type='text' id='band' value={this.state.band} onChange={this.change} required />
   <br />
   <label htmlFor='size'>Size:</label>
-<input type='text' id='size' value={this.state.size} onChange={this.change} />
+<input type='text' id='size' value={this.state.size} onChange={this.change}
+required/>
   <br />
   <label htmlFor='color'>Color:</label>
 <input type='text' id='color' value={this.state.color} onChange={this.change} />
