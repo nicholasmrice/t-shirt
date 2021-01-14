@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI
 app.use(express.json())
 app.use(express.static('public'))
 
-const animalsController = require('./controllers/shirts.js')
+const shirtsController = require('./controllers/shirts.js')
 app.use('/shirts', shirtsController)
 
 mongoose.connect(MONGODB_URI, {
