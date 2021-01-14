@@ -3,17 +3,17 @@ const shirts = express.Router()
 
 const Shirt = require('../models/tshirt.js')
 
+shirts.get('/', (req, res) => {
+  Shirt.find({}, (err, foundShirts) => {
+    res.json(foundShirts)
+  })
+})
+
 shirts.post('/', (req, res) => {
   Shirt.create(req.body, (err, createdShirt) => {
     Shirt.find({}, (err, foundShirts) => {
       res.json(foundShirts)
     })
-  })
-})
-
-shirts.get('/', (req, res) => {
-  Shirt.find({}, (err, Shirts) => {
-    res.json(foundShirts)
   })
 })
 
